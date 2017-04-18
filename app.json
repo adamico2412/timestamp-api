@@ -1,0 +1,6 @@
+{
+    "name": "Timestamp Microservice",
+    "description": "FreeCodeCamp Basejump",
+    "repository": "https://github.com/adamico2412/timestamp-api",
+    "keywords": ["node", "express", "static"]
+}

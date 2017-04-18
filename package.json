@@ -13,5 +13,12 @@
     "express": "^4.15.2",
     "path": "^0.12.7",
     "strftime": "^0.10.0"
+  },
+  "engines": {
+    "node": "4.7.3"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamico2412/timestamp-api"
   }
 }
