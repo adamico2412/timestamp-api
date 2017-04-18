@@ -9,6 +9,7 @@
   "author": "austin",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "strftime": "^0.10.0"
   }
 }
