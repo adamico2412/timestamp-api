@@ -1,5 +1,6 @@
 var strftime = require('strftime');
 var express = require('express');
+var path = require('path');
 var app = express();
 
 function getTimes(time) {
@@ -19,6 +20,14 @@ function getTimes(time) {
 	};
 }
 
+app.set("views", path.resolve(__dirname, "views"));
+app.set("view engine", "html");
+app.engine('html', require('ejs').renderFile);
+
+app.get('/', function(req, res){
+    res.render('index');
+});
+
 app.get('/:date', function(req, res) {
 
   var date = req.params.date;
@@ -29,5 +38,5 @@ app.get('/:date', function(req, res) {
 });
 
 app.listen(8080, function(){
-    console.log("listening on port 80");
+    console.log("listening on port 8080");
 });
